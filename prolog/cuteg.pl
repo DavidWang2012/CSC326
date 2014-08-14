@@ -1,0 +1,9 @@
+male(charlie).
+male(bob).
+male(albert).
+female(eve).
+parent(charlie,bob).
+parent(eve,bob).
+parent(charlie,albert).
+parent(eve,albert).
+son(X):-parent(_,X),male(X).
